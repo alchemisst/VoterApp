@@ -51,4 +51,4 @@ node_modules
 /coverage.json
 
 
-/.package-lock.json
+/package-lock.json
