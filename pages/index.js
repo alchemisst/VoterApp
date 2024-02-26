@@ -1,6 +1,10 @@
+
+
+
 import React ,{useState,useEffect, useContext}from "react";
 import Image from "next/image";
 import Countdown from "react-countdown";
+
 
 //Internal
 import { VotingContext } from "@/context/Voter";

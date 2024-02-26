@@ -209,7 +209,7 @@ contract Create{
         return votedVoters;
     }
 
-    function getVoterList () public view returns (address[] memory){
+    function getVoterList() public view returns (address[] memory){
         return votersAddress;
     }
 

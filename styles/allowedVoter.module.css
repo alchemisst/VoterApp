@@ -1,0 +1,210 @@
+
+
+
+.createVoter{
+    width: 95%;
+    margin:0 auto;
+    margin-block: 2rem;
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+    gap:2rem;
+  
+
+}
+
+.voter{
+    background-color:#231E39;
+    border-radius: 25px;
+    box-shadow:10px 10px 15px rgba(0,0,0,0.35);
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.voter_container_box{
+    text-align: center;
+    border:1px dotted #FF416C;
+    border-radius: 100px;
+
+}
+
+.voter_container_box p{
+    line-height: 0.5s;
+}
+.voter_container_box_image img{
+    border-radius: 20px;
+    
+}
+
+
+
+/* //input */
+.input_container{
+    padding-top: 2rem;
+    width: 80%;
+    margin: auto;
+
+}
+
+.Button{
+    text-align: end;
+}
+
+/* Registration Form */
+.voterInfo{
+    position: absolute;
+    top:12rem;
+    left:3rem;
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+    text-align: start;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.voterInfo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    }
+
+.voterInfo_paragraph{
+    
+    border-radius: 25px;
+    border-radius: 10px 10px 15px rgb(0,0,0,0.35);
+    height: 9rem;
+    
+  
+
+}
+.voterInfo_paragraph p {
+    line-height: 1rem;
+    word-wrap: break-word;
+    padding: .5rem;
+    border: 0.1rem solid;
+    border-radius: 10px;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+.voterInfo_paragraph p span{
+    font-size: 12px;
+}
+/*  
+///sidebar */
+.sideInfo{
+   
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+   
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sideInfo_box{
+    border-radius: 1rem;
+    
+}
+.sideInfo_box p{
+ padding-left: .5rem;
+}
+
+.sideInfo_para{
+    padding: .1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.sideInfo_box h4{
+   
+    padding: .6rem;
+    border-radius: 20px;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+ 
+   background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+}
+
+.card_box{
+    line-height: 1;
+    border:1px solid #9a02ac;
+    padding: .2rem;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+    border-radius: .3rem;
+}
+
+.image img{
+    width: 100%;
+}
+
+/* ////USer List */
+
+.createdVoter_info{
+    background-color: #231E39;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.createdVoter_info img{
+    border-radius: 170px;
+}
+
+
+
+
+@media screen and (max-width:45){
+    .createVoter{
+        width:90%;
+        grid-template-columns:1fr;
+    }
+    .voter{
+        width: 100%;
+        padding: 1rem;
+    }
+    .input_container{
+        width: 100%;
+        
+    }
+     .voterInfo{
+        width: 12rem;
+        height: 12rem;
+        cursor: pointer;
+        left: 0rem;
+        top: 2rem;
+    }
+    .voterInfo_paragraph{
+        font-size: 12px;
+        height: 7.5rem;
+    }
+}

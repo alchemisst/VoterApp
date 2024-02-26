@@ -1,0 +1,50 @@
+.input_box{
+    width:100%;
+    border-radius: 0.2rem;
+    background: transparent;
+}
+
+.input_box input{
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: -25px;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    color: #fff;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.input_box input:focus{
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: #121212;
+}
+
+
+.input_box input::placeholder{
+    color: #2d0036;
+    font-weight: 500;
+    color: #fff;
+}
+.input_box input:focus::placeholder{
+    color: #FF416C;
+    opacity: 0.8;
+}
+
+.input_box input:focus{
+    /* background: rgba(255, 255, 255, 1); */
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: #121212;
+}

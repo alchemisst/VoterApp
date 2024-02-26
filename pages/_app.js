@@ -1,11 +1,21 @@
+require('dotenv').config();
+
 import "../styles/globals.css";
 
 //INTERNAL IMPORT
 import { VotingProvider } from "@/context/Voter";
 import NavBar from "@/components/NavBar/NavBar";
 
+import { Reem_Kufi } from "@next/font/google"
+const roboto = Reem_Kufi({
+    subsets:['latin'],
+    weight:['400','500','600','700']
+     
+});
+
 
 const MyApp = ({ Component, pageProps }) => (
+    <main className={roboto.className}>
     <VotingProvider>
     <div> 
     <NavBar />
@@ -15,5 +25,6 @@ const MyApp = ({ Component, pageProps }) => (
        
     </div>
     </VotingProvider>
+    </main>
     )
 export default MyApp;

@@ -1,0 +1,47 @@
+.button{
+/* /    margin-block: 2rem;
+    background-color: transparent;
+    border:1px solid #FF416C;
+
+    color: #FF416C;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+  */
+    
+    color: #000;
+    background-color: #fff;
+    padding: 1rem 1rem;
+  
+    margin-top: 25px;
+    border-radius: 30px;
+    position: relative;
+    transition: 0.8s ease-in-out;
+
+}
+.button span{
+    z-index: 1;
+    position: relative;
+}
+
+.button::before {
+    content: "";
+   
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -0.6px;
+    z-index: 0;
+    border-radius: 30px;
+    transition: 0.1s ease-in-out;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+}
+
+.button:hover::before {
+    width: 100%;
+}
