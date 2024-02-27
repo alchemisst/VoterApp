@@ -163,7 +163,8 @@ export const VotingProvider = ({children}) => {
     //----GEt Voter DATA
     const getAllVoterData = async() => {
         try{
-              //Connecting to the Smart Contract
+        
+            //Connecting to the Smart Contract
          const web3modal = new Web3Modal();
          const connection = await web3modal.connect();
          const provider = new ethers.providers.Web3Provider(connection);
@@ -177,7 +178,7 @@ export const VotingProvider = ({children}) => {
         
          voterListData.map(async(eL) => {
             const singleVoterData = await contract.getVoterData(eL);
-            pushCandidate.push(singleVoterData)
+            pushVoter.push(singleVoterData)
          })
         
          ////Voter Length
@@ -198,7 +199,7 @@ export const VotingProvider = ({children}) => {
 
 
     ///---------Give Vote
-    const giveVote = async(id){
+    const giveVote = async(id) => {
         try{
 
         }catch(error){
@@ -254,7 +255,7 @@ export const VotingProvider = ({children}) => {
         const allCandidate = await contract.getCandidate();
         allCandidate.map(async(eL) => {
             const singleCandidateData = await contract.getCandidateData(eL);
-            
+            //////////////////pushvoter
             pushCandidate.push(singleCandidateData);
             candidateIndex.push(singleCandidateData[2].toNumber())
         });
@@ -277,6 +278,7 @@ export const VotingProvider = ({children}) => {
         checkIfWalletIsConnected,
         connectWallet,
         uploadToIPFS,
+        uploadToIPFSCandidate,
         createVoter,
         getAllVoterData,
         setCandidate,

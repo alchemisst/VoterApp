@@ -26,7 +26,8 @@ const allowedVoters = () => {
   );
 
   const router = useRouter();
-  const {uploadToIPFS, createVoter } = useContext(VotingContext);
+  
+  const {uploadToIPFS, createVoter, voterArray, getAllVoterData } = useContext(VotingContext);
   
   //voter image drop
   const onDrop = useCallback( async (accepedFile) => {
@@ -80,22 +81,22 @@ const allowedVoters = () => {
       </p>
       </div>
 
-      {/* <div className={Style.card}>
+      <div className={Style.card}>
         {voterArray.map((el,i)=>(
           <div key={i+1} className={Style.card_box}>
             <div className={Style.image}>
-              <img src='' alt="Profile Photo" />
+              <img src={el[4]} alt="Profile Photo" />
             </div>
             <div className={Style.card_info}>
-              <p>Name</p>
-              <p>Address</p>
-              <p>Position</p>
+              <p>{el[1]}</p>
+              <p>Address: {el[3].slice(0,10)}...</p>
+             
             </div>
           </div>
         ))}
 
 
-      </div> */}
+      </div>
 
       </div>
     )
