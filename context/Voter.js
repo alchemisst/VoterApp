@@ -22,7 +22,7 @@ export const VotingProvider = ({children}) => {
     const [candidateLength,setCandidateLength] = useState('');
     const pushCandidate = [];
     const candidateIndex=[];
-    const [candidateArray, setCandidateArray] =useState(pushCandidate);
+    const [candidateArray, setCandidateArray] = useState(pushCandidate);
 
     //---Candidate data end 
 
@@ -201,6 +201,16 @@ export const VotingProvider = ({children}) => {
     ///---------Give Vote
     const giveVote = async(id) => {
         try{
+            const voterAddress = id.address;
+            const voterId = id.id;
+            const web3Modal = new Web3Modal();
+            const connection = await web3Modal.connect();
+            const provider = new ethers.providers.Web3Provider (connection);
+            const signer = provider.getSigner();
+            const contract = fetchContract (signer);
+
+            const votedList = await contract.voter()
+            
 
         }catch(error){
             console.log(error)
@@ -255,9 +265,13 @@ export const VotingProvider = ({children}) => {
         const allCandidate = await contract.getCandidate();
         allCandidate.map(async(eL) => {
             const singleCandidateData = await contract.getCandidateData(eL);
-            //////////////////pushvoter
+
+            
+            
+            /////////      Pushvoter      ///////////// 
             pushCandidate.push(singleCandidateData);
             candidateIndex.push(singleCandidateData[2].toNumber())
+          
         });
          
          ////Candidate Length
@@ -270,6 +284,10 @@ export const VotingProvider = ({children}) => {
     }
 
 }
+
+// useEffect(()=>{
+//     getNewCandidate(); 
+// },[])
     
 
     return(

@@ -108,11 +108,11 @@ contract Create{
     }
 
     function getCandidate() public view returns (address[] memory){
-
+        return candidateAddress;
     }
 
     function getCandidateLength() public view returns (uint256){
-
+        return candidateAddress.length;
     }
 
     function getCandidateData(address _address) public view returns (string memory,string memory,uint256,string memory,uint256,

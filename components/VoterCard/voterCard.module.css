@@ -1,0 +1,8 @@
+.voter_Status{
+    background-color: red;
+    padding: .5rem 1rem;
+    font: 1.3rem;
+    color:  white;
+    font-weight: 700;
+    border-radius: .2rem;
+}

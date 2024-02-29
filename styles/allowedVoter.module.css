@@ -13,17 +13,14 @@
 }
 
 .voter{
-    background-color:#231E39;
+    
     border-radius: 25px;
     box-shadow:10px 10px 15px rgba(0,0,0,0.35);
-    color: black;
+    color: white;
     text-align: center;
     padding: 2rem;
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
+    background: #000000;  /* fallback for old browsers */
+ 
 }
 
 .voter_container_box{
@@ -66,10 +63,7 @@
     border-radius: 25px;
     box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
     text-align: start;
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: black
 
 }
 
@@ -110,37 +104,34 @@
     padding: .5rem 1rem;
     border-radius: 1rem;
    
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background:black}
 .sideInfo_box{
     border-radius: 1rem;
     
 }
 .sideInfo_box p{
  padding-left: .5rem;
+ color: white;
 }
 
 .sideInfo_para{
     padding: .1rem;
     border-radius: 20px;
     font-weight: 600;
-    background: #FF416C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+     background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .sideInfo_box h4{
    
     padding: .6rem;
     border-radius: 20px;
-    background: #FF416C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
- 
-   background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .card{
@@ -165,20 +156,24 @@
 /* ////USer List */
 
 .createdVoter_info{
-    background-color: #231E39;
+    background-color: white;
     border-radius: 25px;
     box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
-    color: black;
+    color: white;
     text-align: center;
     padding: 2rem;
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: black
 }
 .createdVoter_info img{
     border-radius: 170px;
+    width: 336px;
+    height: 336px;
 }
+.dottedline {
+
+    margin-top: 15px;
+    width: 100%;
+  }
 
 
 

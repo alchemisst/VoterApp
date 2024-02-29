@@ -9,16 +9,18 @@ import Countdown from "react-countdown";
 //Internal
 import { VotingContext } from "@/context/Voter";
 import Style from "../styles/index.module.css";
-import card from "@/components/Card/card";
+import Card from "@/components/Card/Card";
 import image from "../assets/candidate-1.jpg";
 
 
 const index = () => {
-  const { getNewCandidate,candidateArray,giveVote, voterLength,candidateLength,checkIfWalletIsConnected,currentAccount} = useContext(VotingContext);
+  const { getNewCandidate,candidateArray,giveVote, voterLength,candidateLength,checkIfWalletIsConnected,currentAccount,getAllVoterData} = useContext(VotingContext);
 
   useEffect(()=>{
-    // checkIfWalletIsConnected
+    checkIfWalletIsConnected();
+    getAllVoterData();
   })
+ 
   
   
   return (
@@ -39,8 +41,9 @@ const index = () => {
         </div>
 
         <div className={Style.winner_message}>
+        
           <small>
-            <Countdown date={Date.now()+10000} />
+            <Countdown date={Date.now()+10000}/>
           </small>
         </div>
 
@@ -49,7 +52,9 @@ const index = () => {
 
     <Card 
     candidateArray={candidateArray}
-    giveVote={giveVote} />
+    giveVote={giveVote} 
+    />
+
     
     </div>
   );

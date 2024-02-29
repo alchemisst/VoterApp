@@ -7,7 +7,8 @@ import { VotingProvider } from "@/context/Voter";
 import NavBar from "@/components/NavBar/NavBar";
 
 import { Reem_Kufi } from "@next/font/google"
-const roboto = Reem_Kufi({
+
+const reem = Reem_Kufi({
     subsets:['latin'],
     weight:['400','500','600','700']
      
@@ -15,7 +16,7 @@ const roboto = Reem_Kufi({
 
 
 const MyApp = ({ Component, pageProps }) => (
-    <main className={roboto.className}>
+    <main className={reem.className}>
     <VotingProvider>
     <div> 
     <NavBar />

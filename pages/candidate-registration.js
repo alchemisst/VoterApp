@@ -14,7 +14,7 @@ import Input from "@/components/Input/Input";
 
 
 
-const candidateRegestration = () => {
+const candidateRegistration = () => {
   const [fileUrl,setFileUrl] = useState(null);
   const [candidateForm, setCandidateFormInput] = useState(
     {
@@ -31,7 +31,7 @@ const candidateRegestration = () => {
   //Candidate image drop
   const onDrop = useCallback( async (accepedFile) => {
     console.log("File dropped:", accepedFile);
-    const url = await uploadToIPFS(accepedFile[0]);
+    const url = await uploadToIPFSCandidate(accepedFile[0]);
     console.log("File URL:", url);
     
     setFileUrl(url);
@@ -157,4 +157,4 @@ const candidateRegestration = () => {
   </div>);
 };
 
-export default candidateRegestration;
+export default candidateRegistration;

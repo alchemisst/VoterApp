@@ -146,9 +146,10 @@ const allowedVoters = () => {
       <div className={Style.createdVoter}>
         <div className={Style.createdVoter_info}>
           <Image src={images.creator} alt="User Profile"  objectFit="contain"/>
-          <p>
+          <hr className={Style.dottedline} />
+          <h2>
             Notice For User
-          </p>
+          </h2>
           <p>Organizer <span>0x999999.......</span></p>
           <p>
             Only Organizer of the voting contract can create voter
