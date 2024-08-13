@@ -29,27 +29,27 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-cd voting-app
+   cd voting-app
 
 3. Install dependencies:
 
-``bash
-npm install
+   ```bash
+   npm install
 
 4. Compile the smart contract:
 
-```bash
-npx hardhat compile
+   ```bash
+   npx hardhat compile
 
 5. Deploy the smart contract:
 
-```bash
-npx hardhat run scripts/deploy.js --network <network_name>
+   ```bash
+   npx hardhat run scripts/deploy.js --network <network_name>
 
 6. Start the development server:
 
-```bash
-npm run dev
+   ```bash
+   npm run dev
 
 Open your browser and navigate to http://localhost:3000 to view the app.
 
