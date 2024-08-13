@@ -25,31 +25,32 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/voting-app.git
-Navigate to the project directory:
+   
+2. Navigate to the project directory:
 
-bash
-Copy code
+   ```bash
 cd voting-app
-Install dependencies:
 
-bash
-Copy code
+3. Install dependencies:
+
+``bash
 npm install
-Compile the smart contract:
 
-bash
-Copy code
+4. Compile the smart contract:
+
+```bash
 npx hardhat compile
-Deploy the smart contract:
 
-bash
-Copy code
+5. Deploy the smart contract:
+
+```bash
 npx hardhat run scripts/deploy.js --network <network_name>
-Start the development server:
 
-bash
-Copy code    
+6. Start the development server:
+
+```bash
 npm run dev
+
 Open your browser and navigate to http://localhost:3000 to view the app.
 
 Usage
